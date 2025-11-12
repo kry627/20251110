@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Google Fonts: Noto Sans TC (for Traditional Chinese) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <div id="sideMenu" aria-hidden="true">
+      <nav>
+        <ul>
+          <li><a href="#" id="open-projects">第一單元作品</a></li>
+          <li><a href="#" id="open-handout">第一單元講義</a></li>
+          <li><a href="#" id="open-test3">測驗系統</a></li>
+          <li><a href="#" id="open-testnote">測驗卷筆記</a></li>
+          <li><a href="#" id="open-midterm">期中考作品筆記</a></li>
+          <li class="has-submenu">
+            <a href="#" id="open-tku">淡江大學</a>
+            <ul class="submenu hidden">
+              <li><a href="#" id="open-et">教育科技學系</a></li>
+            </ul>
+          </li>
+          <li><a href="#">回到首頁</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- iframe overlay (initially hidden) -->
+    <div id="iframeOverlay" aria-hidden="true">
+      <div class="iframe-wrap">
+        <button id="iframeClose" aria-label="關閉視窗">×</button>
+        <iframe id="contentFrame" src="" frameborder="0" title="內容視窗"></iframe>
+      </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
